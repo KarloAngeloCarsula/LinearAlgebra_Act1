@@ -1,0 +1,20 @@
+Name = (input("Full Name: "))
+Program = (input("Course: "))
+Prelims = int(input("Prelim Grade: "))
+Midterms = int(input("Midterms Grade: "))
+Finals = int(input("Finals Grade: "))
+
+pg = Prelims * .3
+mg = Midterms * .3
+fg = Finals * .4
+
+Average = pg + mg + fg
+print ("Your Semestral Grade is", Average)
+if Average>=  71 and Average<=100:
+    print("\U0001F600")
+elif Average ==70:
+    print("\U0001F606")
+elif Average>= 0 and Average<=69:
+    print("\U0001F62D")
+else:
+    print("Invalid Input!")
